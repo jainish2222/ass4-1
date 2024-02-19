@@ -1,38 +1,43 @@
-/* src/App.css or a new stylesheet */
-.error {
-  border: 1px solid red;
-}
-.pp1{
-  display: flex;
-  justify-content: center;
-}
-form {
-  max-width: 400px;
+/* src/App.css */
+.app {
+  max-width: 600px;
   margin: auto;
+  padding: 20px;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+.note {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-input {
-  width: 100%;
+.timestamp {
+  font-style: italic;
+}
+
+.add-note-form {
+  margin-top: 20px;
+  display: flex;
+}
+
+.add-note-form input {
+  flex: 1;
   padding: 8px;
-  margin-bottom: 16px;
 }
 
-button {
+.add-note-form button {
   background-color: #4caf50;
   color: white;
-  padding: 10px 15px;
+  padding: 8px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-  margin-right: 8px;
 }
 
-button:disabled {
+.add-note-form button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.notes-list {
+  margin-top: 20px;
 }
